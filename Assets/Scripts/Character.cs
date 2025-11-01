@@ -69,7 +69,7 @@ public abstract class Character : MonoBehaviour
     {
         Collider2D collider = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
 
-        isGrounded = (collider != null);
+        isGrounded = collider != null;
     }
 
     protected virtual void OnDrawGizmos()

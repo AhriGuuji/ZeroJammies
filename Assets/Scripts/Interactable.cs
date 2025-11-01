@@ -1,0 +1,21 @@
+using UnityEngine;
+using UnityEngine.InputSystem;
+
+public class Interactable : Item
+{
+    [SerializeField]
+    protected float _interactRange;
+    [SerializeField]
+    protected string _inputInteract;
+    protected InputAction _interact;
+
+    public virtual void Awake()
+    {
+        _interact = InputSystem.actions.FindAction(_inputInteract);
+    }
+
+    public virtual void OnDrawGizmo()
+    {
+        Gizmos.DrawWireSphere(transform.position, _interactRange);
+    }
+}
