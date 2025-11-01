@@ -16,8 +16,8 @@ public class SlotInventory : MonoBehaviour
 
     private void Update()
     {
-        if (_inventory._items[_slotID])
-            _image.sprite = _inventory._items[_slotID].GetComponent<SpriteRenderer>().sprite;
+        if (_inventory._Items[_slotID])
+            _image.sprite = _inventory._Items[_slotID].GetComponent<SpriteRenderer>().sprite;
         else _image.sprite = null;
     }
 }

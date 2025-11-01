@@ -33,7 +33,7 @@ public class PlayerMovement : Character
         base.FixedUpdate();
     }
 
-    private void OnEnable()
+    /*private void OnEnable()
     {
         _inputMovement.Enable();
     }
@@ -41,7 +41,7 @@ public class PlayerMovement : Character
     private void OnDisable()
     {
         _inputMovement.Disable();
-    }
+    }*/
 
     protected override float GetDirection()
     {

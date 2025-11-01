@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using Unity.Mathematics;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -8,7 +9,7 @@ using UnityEngine.InputSystem;
 public class Inventory : MonoBehaviour
 {
     [field: SerializeField]
-    public Item[] _items { get; private set; }
+    public List<Item> _Items { get; private set; }
     [SerializeField]
     private int _inventorySize = 5;
 
@@ -22,16 +23,19 @@ public class Inventory : MonoBehaviour
     [SerializeField]
     private string _previous = "Previous";
     private int _selectedItem;
+    private PlayerMovement _player;
 
     private void Awake()
     {
-        _items = new Item[_inventorySize];
+        _player = FindAnyObjectByType<PlayerMovement>();
         _selectedItem = 0;
     }    
     private void Update()
     {
+        Debug.Log(_selectedItem);
+
         if (InputSystem.actions.FindAction(_drop).WasPressedThisFrame())
-            RemoveFromInventory(_selectedItem);
+            RemoveFromInventory();
         if (_selectedItem != _inventorySize &&
             InputSystem.actions.FindAction(_next).WasPressedThisFrame())
             _selectedItem++;
@@ -40,27 +44,23 @@ public class Inventory : MonoBehaviour
             _selectedItem--;
     }
 
-    public Item[] AddToInventory(Item item)
+    public void AddToInventory(Item item)
     {
-        List<Item> _itemsList = new(_items);
+        Debug.Log("trying to add");
 
-        if (_itemsList.Count - _inventorySize != 0)
+        if (_Items.Count < _inventorySize)
         {
-            _items.Append(item);
+            Debug.Log("it went");
+            _Items.Add(item);
             WasGrabbed = true;
         }
         else WasGrabbed = false;
-
-        return _items =  _itemsList.ToArray();
     }
 
-    public Item[] RemoveFromInventory(int itemID)
+    public void RemoveFromInventory()
     {
-        List<Item> _itemsList = new(_items);
-
-        Instantiate(_items[itemID],transform);
-        _itemsList.Remove(_items[itemID]);
-
-        return _items = _itemsList.ToArray();
+        Instantiate(_Items[_selectedItem].gameObject
+            ,_player.transform.position,quaternion.identity);
+        _Items.Remove(_Items[_selectedItem]);
     }
 }

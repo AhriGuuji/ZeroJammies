@@ -7,19 +7,23 @@ public class Collectable : Interactable
     {
         base.Awake();
 
-        //_inventory = FindAnyObjectByType<Inventory>();
+        _inventory = FindAnyObjectByType<Inventory>();
     }
 
-    private void Update()
+    protected override void Update()
     {
-        if (_interact.WasPressedThisFrame())
+        Collider2D collider = Physics2D.OverlapCircle(transform.position, _interactRange);
+
+
+        if (collider.GetComponent<PlayerMovement>())
         {
-            _inventory.AddToInventory(this);
+            Debug.Log("Alo");
+            if (_interact.WasPressedThisFrame())
+            {
+                _inventory.AddToInventory(GetComponent<Item>());
+                gameObject.SetActive(false);
+                Debug.Log("Popo");
+            }
         }
-    }
-
-    protected override void OnDrawGizmo()
-    {
-        base.OnDrawGizmo();
     }
 }
