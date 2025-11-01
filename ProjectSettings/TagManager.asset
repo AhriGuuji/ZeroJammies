@@ -3,7 +3,12 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 3
+<<<<<<< HEAD
   tags: []
+=======
+  tags:
+  - Teleporter
+>>>>>>> 853507d02947eec75433e3c4ce0e190f2ad26ac8
   layers:
   - Default
   - TransparentFX

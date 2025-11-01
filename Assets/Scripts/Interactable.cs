@@ -34,4 +34,5 @@ public class Interactable : Item
         Gizmos.color = Color.cyan;
         Gizmos.DrawWireSphere(transform.position, _interactRange);
     }
+    
 }
