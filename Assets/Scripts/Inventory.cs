@@ -12,6 +12,8 @@ public class Inventory : MonoBehaviour
     public List<Item> _Items { get; private set; }
     [SerializeField]
     private int _inventorySize = 5;
+    [SerializeField]
+    private int _playerSpriteSize = 32;
 
     [field: SerializeField]
     public bool WasGrabbed { get; private set; }
@@ -59,8 +61,10 @@ public class Inventory : MonoBehaviour
 
     public void RemoveFromInventory()
     {
-        Instantiate(_Items[_selectedItem].gameObject
-            ,_player.transform.position,quaternion.identity);
+        _Items[_selectedItem].transform.position
+            = new Vector2(_player.transform.position.x, _player.transform.position.y+_playerSpriteSize);
+        _Items[_selectedItem].GetComponent<SpriteRenderer>().enabled = true;
+        _Items[_selectedItem].GetComponent<Collectable>().enabled = true;
         _Items.Remove(_Items[_selectedItem]);
     }
 }

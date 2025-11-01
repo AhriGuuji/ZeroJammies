@@ -20,8 +20,9 @@ public class Collectable : Interactable
             Debug.Log("Alo");
             if (_interact.WasPressedThisFrame())
             {
-                _inventory.AddToInventory(GetComponent<Item>());
-                gameObject.SetActive(false);
+                _inventory.AddToInventory(this);
+                GetComponent<SpriteRenderer>().enabled = false;
+                GetComponent<Collectable>().enabled = false;
                 Debug.Log("Popo");
             }
         }
