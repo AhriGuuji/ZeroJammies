@@ -7,6 +7,8 @@ public class Interactable : Item
     protected float _interactRange;
     [SerializeField]
     protected string _inputInteract;
+    [SerializeField]
+    protected LayerMask _playerLayer;
     protected InputAction _interact;
 
     protected virtual void Awake()
@@ -16,8 +18,8 @@ public class Interactable : Item
 
     protected virtual void Update()
     {
-        Collider2D collider = Physics2D.OverlapCircle(transform.position, _interactRange);
-
+        Collider2D collider = Physics2D.OverlapCircle(transform.position, _interactRange, _playerLayer);
+        if (!collider) return;
 
         if (collider.GetComponent<PlayerMovement>())
         {
