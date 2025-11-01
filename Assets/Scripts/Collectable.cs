@@ -2,8 +2,6 @@ using UnityEngine;
 
 public class Collectable : Interactable
 {
-    [SerializeField]
-    private LayerMask _playerLayer;
     private Inventory _inventory;
     protected override void Awake()
     {
