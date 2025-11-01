@@ -1,13 +1,16 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class Inventory : MonoBehaviour
 {
+    [field: SerializeField]
+    public Item[] _items { get; private set; }
     [SerializeField]
-    private List<Item> _items;
+    private int _inventorySize = 5;
 
     [field: SerializeField]
     public bool WasGrabbed { get; private set; }
@@ -22,36 +25,42 @@ public class Inventory : MonoBehaviour
 
     private void Awake()
     {
-        _items = new List<Item>();
+        _items = new Item[_inventorySize];
         _selectedItem = 0;
     }    
     private void Update()
     {
         if (InputSystem.actions.FindAction(_drop).WasPressedThisFrame())
             RemoveFromInventory(_selectedItem);
-        if (_selectedItem != _items.Count &&
+        if (_selectedItem != _inventorySize &&
             InputSystem.actions.FindAction(_next).WasPressedThisFrame())
             _selectedItem++;
         if (_selectedItem != 0 &&
             InputSystem.actions.FindAction(_previous).WasPressedThisFrame())
             _selectedItem--;
-
-        
     }
 
-    private void AddToInventory(Item item)
+    public Item[] AddToInventory(Item item)
     {
-        if (_items.Count - _items.Count != 0)
+        List<Item> _itemsList = new(_items);
+
+        if (_itemsList.Count - _inventorySize != 0)
         {
             _items.Append(item);
             WasGrabbed = true;
         }
         else WasGrabbed = false;
+
+        return _items =  _itemsList.ToArray();
     }
 
-    private void RemoveFromInventory(int itemID)
+    public Item[] RemoveFromInventory(int itemID)
     {
+        List<Item> _itemsList = new(_items);
+
         Instantiate(_items[itemID],transform);
-        _items.Remove(_items[itemID]);
+        _itemsList.Remove(_items[itemID]);
+
+        return _items = _itemsList.ToArray();
     }
 }

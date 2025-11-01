@@ -9,12 +9,12 @@ public class Interactable : Item
     protected string _inputInteract;
     protected InputAction _interact;
 
-    public virtual void Awake()
+    protected virtual void Awake()
     {
         _interact = InputSystem.actions.FindAction(_inputInteract);
     }
 
-    public virtual void OnDrawGizmo()
+    protected virtual void OnDrawGizmo()
     {
         Gizmos.DrawWireSphere(transform.position, _interactRange);
     }
