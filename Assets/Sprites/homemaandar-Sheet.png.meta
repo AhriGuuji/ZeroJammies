@@ -1,25 +1,19 @@
 fileFormatVersion: 2
-guid: 4be8d4e0ddd6c2b4e8d9568fd32e5530
+guid: 2907c30b967fd5f43af0785cf0021954
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7177399884796195538
-    second: personagemfemininaandar-Sheet_0
+      213: 5364254216330930491
+    second: homemaandar-Sheet_0
   - first:
-      213: 4370411596084139375
-    second: personagemfemininaandar-Sheet_1
+      213: -3769109840603055080
+    second: homemaandar-Sheet_1
   - first:
-      213: 8876716691542008897
-    second: personagemfemininaandar-Sheet_2
+      213: -4236004067386526801
+    second: homemaandar-Sheet_2
   - first:
-      213: 6405236344059641395
-    second: personagemfemininaandar-Sheet_3
-  - first:
-      213: 4914972378872936920
-    second: personagemfemininaandar-Sheet_4
-  - first:
-      213: 1740057586295438906
-    second: personagemfemininaandar-Sheet_5
+      213: -5824560568286719819
+    second: homemaandar-Sheet_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -115,133 +109,133 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: personagemfemininaandar-Sheet_0
+      name: homemaandar-Sheet_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 59
+        y: 32
         width: 16
-        height: 34
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2d2f430fa2f3b9360800000000000000
-      internalID: 7177399884796195538
+      spriteID: b39eb49e9c8a17a40800000000000000
+      internalID: 5364254216330930491
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: personagemfemininaandar-Sheet_1
+      name: homemaandar-Sheet_1
       rect:
         serializedVersion: 2
         x: 16
-        y: 59
+        y: 32
         width: 16
-        height: 34
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f65d7d2f032d6ac30800000000000000
-      internalID: 4370411596084139375
+      spriteID: 81cfc6fc19e61bbc0800000000000000
+      internalID: -3769109840603055080
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: personagemfemininaandar-Sheet_2
+      name: homemaandar-Sheet_2
       rect:
         serializedVersion: 2
         x: 32
-        y: 59
+        y: 32
         width: 16
-        height: 34
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1446423dcce603b70800000000000000
-      internalID: 8876716691542008897
+      spriteID: fa3f0587eb0b635c0800000000000000
+      internalID: -4236004067386526801
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: personagemfemininaandar-Sheet_3
+      name: homemaandar-Sheet_3
       rect:
         serializedVersion: 2
         x: 0
-        y: 9
+        y: 0
         width: 16
-        height: 34
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 33eb81eb488f3e850800000000000000
-      internalID: 6405236344059641395
+      spriteID: 5b0d582e5010b2fa0800000000000000
+      internalID: -5824560568286719819
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: personagemfemininaandar-Sheet_4
+      name: homemaandar-Sheet_4
       rect:
         serializedVersion: 2
         x: 16
-        y: 9
+        y: 0
         width: 16
-        height: 34
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 8d9f393865d753440800000000000000
-      internalID: 4914972378872936920
+      spriteID: 8b40ce51bcdf3a541b717c357de530bd
+      internalID: -1647572391
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: personagemfemininaandar-Sheet_5
+      name: homemaandar-Sheet_5
       rect:
         serializedVersion: 2
         x: 32
-        y: 9
+        y: 0
         width: 16
-        height: 34
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: a3efcdfc72de52810800000000000000
-      internalID: 1740057586295438906
+      spriteID: dac748e0f1a2778418cbc9f75c3b707b
+      internalID: 1717732118
       vertices: []
       indices: 
       edges: []
@@ -250,7 +244,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: cfdbe915d3fa51b4490f0889768a311d
+    spriteID: bf228963b5c4cb7459fb00334bdc4bbf
     internalID: 0
     vertices: []
     indices: 
@@ -260,12 +254,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      personagemfemininaandar-Sheet_0: 7177399884796195538
-      personagemfemininaandar-Sheet_1: 4370411596084139375
-      personagemfemininaandar-Sheet_2: 8876716691542008897
-      personagemfemininaandar-Sheet_3: 6405236344059641395
-      personagemfemininaandar-Sheet_4: 4914972378872936920
-      personagemfemininaandar-Sheet_5: 1740057586295438906
+      homemaandar-Sheet_0: 5364254216330930491
+      homemaandar-Sheet_1: -3769109840603055080
+      homemaandar-Sheet_2: -4236004067386526801
+      homemaandar-Sheet_3: -5824560568286719819
+      homemaandar-Sheet_4: -1647572391
+      homemaandar-Sheet_5: 1717732118
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

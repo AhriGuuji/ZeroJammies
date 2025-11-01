@@ -18,4 +18,5 @@ public class Interactable : Item
     {
         Gizmos.DrawWireSphere(transform.position, _interactRange);
     }
+    
 }
