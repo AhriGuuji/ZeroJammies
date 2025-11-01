@@ -1,3 +1,6 @@
+using System;
+using System.Linq.Expressions;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -13,11 +16,17 @@ public class SlotInventory : MonoBehaviour
         _inventory = FindAnyObjectByType<Inventory>();
         _image = GetComponent<Image>();
     }
-
+//a kátia teve aki
     private void Update()
     {
-        if (_inventory._Items[_slotID])
+        try
+        {
+            _image.enabled = true;
             _image.sprite = _inventory._Items[_slotID].GetComponent<SpriteRenderer>().sprite;
-        else _image.sprite = null;
+        }
+        catch (ArgumentOutOfRangeException)
+        {
+            _image.enabled = false;
+        }
     }
 }
