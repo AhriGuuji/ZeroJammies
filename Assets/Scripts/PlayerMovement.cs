@@ -9,13 +9,16 @@ public class PlayerMovement : Character
     [SerializeField]
     private string _inputMove = "Move";
     private InputAction _inputMovement;
+    [SerializeField] private float _dodgeForce;
 
+    [SerializeField] private string _sprint = "Sprint";
+     private InputAction _inputDash;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     protected override void Start()
     {
         base.Start();
-
+        _inputDash = InputSystem.actions.FindAction(_sprint);
         _inputMovement = InputSystem.actions.FindAction(_inputMove);
     }
 
@@ -24,6 +27,12 @@ public class PlayerMovement : Character
     {
         playerDir = _inputMovement.ReadValue<Vector2>();
         ComputeGroundState();
+
+        if (_inputDash.WasPressedThisFrame())
+        {
+            Debug.Log("cook");
+            Dodge();
+        }
 
         base.Update();
     }
@@ -52,4 +61,11 @@ public class PlayerMovement : Character
     {
         base.ComputeGroundState();
     }
+    private void Dodge()
+    {
+        Debug.Log("clean");
+        rb.AddForce(Vector2.right * GetDirection() * _dodgeForce, ForceMode2D.Impulse);
+    }
+
+
 }

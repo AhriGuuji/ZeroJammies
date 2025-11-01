@@ -11,24 +11,24 @@ public class PlayerTeleport : Interactable
         base.Awake();
     }
     // Update is called once per frame
-    void Update()
+    protected override void Update()
     {
 
-        /*if (_interact.WasPerformedThisFrame())
+        if (_interact.WasPerformedThisFrame())
         {
             if (currentTeleporter != null)
             {
                 transform.position = currentTeleporter.GetComponent<Teleporter>().getDestionation().position;
             }
-        }*/
+        }
         
-        if (Input.GetKeyDown(KeyCode.E))
+        /*if (Input.GetKeyDown(KeyCode.E))
         {
             if(currentTeleporter != null)
             {
                 transform.position = currentTeleporter.GetComponent<Teleporter>().getDestionation().position;
             }
-        }
+        }*/
 
     }
 
