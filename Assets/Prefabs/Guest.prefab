@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7000358959639678401}
   - component: {fileID: 8486464931325790895}
   - component: {fileID: 2100255599789848823}
+  - component: {fileID: 5743810866272482552}
   m_Layer: 7
   m_Name: Guest
   m_TagString: Untagged
@@ -187,6 +188,28 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: -1}
   m_Size: {x: 8, y: 30}
   m_Direction: 0
+--- !u!95 &5743810866272482552
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 110243420414034382}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c52bf289945fe9b4ab1f72420404251b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &4854706605520356097
 GameObject:
   m_ObjectHideFlags: 0

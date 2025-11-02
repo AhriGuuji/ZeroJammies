@@ -8,15 +8,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Main Menu.unity
     guid: 4ba8e268d976bd241a630e58255873b1
-<<<<<<< HEAD
   - enabled: 1
     path: Assets/Scenes/Ghost Side.unity
     guid: b1373bf730ef5b9429fb2f7867b584b1
   - enabled: 1
+    path: Assets/Scenes/Win Screen.unity
+    guid: f9a7bd00f88911945bdf22c1d04d5398
+  - enabled: 1
     path: Assets/Scenes/Game Over.unity
     guid: 2128b6004f9bf7c47b459e842a6c6203
-=======
->>>>>>> 8f422a3ae597f2ca31ca9a6259835d0043953e35
   - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02

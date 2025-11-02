@@ -15,7 +15,7 @@ public class ButtonMashChallenge : Interactable
     {
         if (memoryTimer == null)
         {
-            memoryTimer = FindObjectOfType<MemoryTimer>();
+            memoryTimer = FindAnyObjectByType<MemoryTimer>();
             if (memoryTimer == null)
                 Debug.LogError("No MemoryTimer found in the scene!");
         }
@@ -29,24 +29,29 @@ public class ButtonMashChallenge : Interactable
             Debug.LogError("_interact is null! Did you assign your InputActionReference in Interactable?");
             return;
         }
+        
+        Collider2D collider = Physics2D.OverlapCircle(transform.position, _interactRange, _playerLayer);
+        if (!collider) return;
 
-        if (_interact.WasPressedThisFrame())
+        if (collider.GetComponent<PlayerMovement>())
         {
-            if (!timerRunning)
+            if (_interact.WasPressedThisFrame())
             {
-                timerRunning = true;
-                timer = timeLimit;
-            }
+                if (!timerRunning)
+                {
+                    timerRunning = true;
+                    timer = timeLimit;
+                }
 
-            currentPresses++;
-            Debug.Log($"Pressed {currentPresses}/{requiredPresses}");
+                currentPresses++;
+                Debug.Log($"Pressed {currentPresses}/{requiredPresses}");
 
-            if (currentPresses >= requiredPresses)
-            {
-                Debug.Log("Success! You mashed fast enough!");
-                GameEvent();
-                ResetChallenge();
-                return;
+                if (currentPresses >= requiredPresses)
+                {
+                    Debug.Log("Success! You mashed fast enough!");
+                    GameEvent();
+                    ResetChallenge();
+                }
             }
         }
 
