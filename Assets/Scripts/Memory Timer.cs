@@ -20,7 +20,7 @@ public class MemoryTimer : MonoBehaviour
     {
         remainingTime -= Time.deltaTime;
 
-        if (remainingTime <= 0)
+        if (remainingTime <= 10)
         {
             SceneManager.LoadScene(_sceneName);
         }

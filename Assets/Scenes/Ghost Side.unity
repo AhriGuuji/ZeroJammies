@@ -163,7 +163,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 128997648}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -953,7 +953,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 553898944}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -1345,7 +1345,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -4785407269261959125, guid: 2d9af8fc6863d1b4bb027c7fae0a8b78, type: 3}
+  m_Sprite: {fileID: 830110373445459284, guid: 7dcc42a66b4852e4f994b70fd908a4b1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1406,7 +1406,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _sceneName: Main Menu
   timerText: {fileID: 1324901966}
-  remainingTime: 500
+  remainingTime: 300
 --- !u!114 &1070807595
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1497,20 +1497,14 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1070807593}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 21eb1af2eb6669d479f164adf2b7f0cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactRange: 0
-  _inputInteract: Interact
-  _playerLayer:
-    serializedVersion: 2
-    m_Bits: 0
-  _interactionsNeeded: 0
   _sceneName: Game Over
-  initialTime: 50
-  remainingTime: 50
+  initialTime: 30
+  remainingTime: 30
 --- !u!1 &1081381643
 GameObject:
   m_ObjectHideFlags: 0
@@ -1692,8 +1686,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1791,7 +1785,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1391180339}
   - component: {fileID: 1391180338}
-  - component: {fileID: 1391180337}
+  - component: {fileID: 1391180340}
   m_Layer: 0
   m_Name: Lights
   m_TagString: Untagged
@@ -1799,25 +1793,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1391180337
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1391180336}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dcdc7be3147b74a4abe251be5ff1e5ab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _interactRange: 12.6
-  _inputInteract: Interact
-  _playerLayer:
-    serializedVersion: 2
-    m_Bits: 64
-  _interactionsNeeded: 5
-  _sprite: {fileID: 5364254216330930491, guid: 2907c30b967fd5f43af0785cf0021954, type: 3}
 --- !u!212 &1391180338
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1825,7 +1800,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1391180336}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -1861,7 +1836,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0, g: 0.28213, b: 1, a: 1}
   m_FlipX: 0
@@ -1888,6 +1863,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1391180340
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1391180336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8b91f49448dc394b8cf4f06449f067e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interactRange: 12.6
+  _inputInteract: Interact
+  _playerLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  _interactionsNeeded: 0
+  requiredPresses: 10
+  timeLimit: 2
+  _sprite: {fileID: -7791393839644886459, guid: 7fe5bf82cb712624ba89046ce7cee03d, type: 3}
+  memoryTimer: {fileID: 0}
 --- !u!1 &1426339479
 GameObject:
   m_ObjectHideFlags: 0
@@ -2337,7 +2334,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1708928443}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -2394,7 +2391,7 @@ Transform:
   m_GameObject: {fileID: 1708928443}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 13, y: -16, z: 0}
+  m_LocalPosition: {x: 14, y: -26, z: 0}
   m_LocalScale: {x: 18, y: 18, z: 18}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -2721,7 +2718,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2044571847}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -2757,7 +2754,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0, g: 0.28213, b: 1, a: 1}
   m_FlipX: 0
@@ -2801,7 +2798,7 @@ MonoBehaviour:
   _playerLayer:
     serializedVersion: 2
     m_Bits: 64
-  _interactionsNeeded: 5
+  _interactionsNeeded: 2
   _sprite: {fileID: 5364254216330930491, guid: 2907c30b967fd5f43af0785cf0021954, type: 3}
 --- !u!1001 &7161870263161720947
 PrefabInstance:
