@@ -10,7 +10,16 @@ public class Anomaly : Interactable
 {
     [SerializeField] private Sprite _normalState;
     [SerializeField] private Sprite _anomalyState;
+    [SerializeField] private float _stress = 1.0f;
     private STATE _gameState;
+
+    protected override void Awake()
+    {
+        base.Awake();
+
+        GetComponent<SpriteRenderer>().sprite = _normalState;
+    }
+
     protected override void Update()
     {
         if (_gameState == STATE.Anomaly)
@@ -28,10 +37,14 @@ public class Anomaly : Interactable
                 }
             }
 
+            if (collider.GetComponent<Guest>() & collider.GetComponent<Guest>().CanStress)
+            {
+                StartCoroutine(collider.GetComponent<Guest>().IncrementStress(_stress));
+            }
+
             if (_interactionsPressed == _interactionsNeeded)
             {
                 GameEvent();
-                _interactionsPressed++;
             }
         }
     }
@@ -41,6 +54,11 @@ public class Anomaly : Interactable
         _gameState = STATE.Normal;
         GetComponent<SpriteRenderer>().sprite = _normalState;
         _interactionsPressed = 0;
+    }
+
+    public void ChangeState()
+    {
+        _gameState = STATE.Anomaly;
     }
 }
 

@@ -7,7 +7,7 @@ public class Interactable : Item
     [SerializeField]
     protected float _interactRange;
     [SerializeField]
-    protected string _inputInteract = "Interaction";
+    protected string _inputInteract = "Interact";
     [SerializeField]
     protected LayerMask _playerLayer;
     [SerializeField]
