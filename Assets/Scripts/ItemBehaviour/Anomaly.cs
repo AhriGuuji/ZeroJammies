@@ -58,6 +58,11 @@ public class Anomaly : Interactable
 
     public void ChangeState()
     {
+        OnChangeState();
+    }
+
+    protected virtual void OnChangeState()
+    {
         _gameState = STATE.Anomaly;
     }
 }
