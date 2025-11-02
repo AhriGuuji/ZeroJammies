@@ -28,7 +28,6 @@ public class Interactable : Item
 
         if (collider.GetComponent<PlayerMovement>())
         {
-            Debug.Log("wowoow");
             if (_interact.WasPressedThisFrame())
             {
                 _interactionsPressed++;
