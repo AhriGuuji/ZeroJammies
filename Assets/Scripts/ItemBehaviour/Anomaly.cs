@@ -1,17 +1,17 @@
 using UnityEngine;
 
-enum STATE
-{
-    Normal,
-    Anomaly
-}
-
 public class Anomaly : Interactable
 {
-    [SerializeField] private Sprite _normalState;
-    [SerializeField] private Sprite _anomalyState;
-    [SerializeField] private float _stress = 1.0f;
-    private STATE _gameState;
+    protected enum STATE
+    {
+        Normal,
+        Anomaly
+    }
+
+    [SerializeField] protected Sprite _normalState;
+    [SerializeField] protected Sprite _anomalyState;
+    [SerializeField] protected float _stress = 1.0f;
+    protected STATE _gameState;
 
     protected override void Awake()
     {
@@ -54,6 +54,7 @@ public class Anomaly : Interactable
         _gameState = STATE.Normal;
         GetComponent<SpriteRenderer>().sprite = _normalState;
         _interactionsPressed = 0;
+        FindAnyObjectByType<GameManager>().IncAnomaliesCorrected();
     }
 
     public void ChangeState()

@@ -20,7 +20,12 @@ public class GameManager : MonoBehaviour
     private string _tab = "Tab";
     [SerializeField]
     private string _endGame = "GameOver";
-    [SerializeField] TextMeshProUGUI timerText;
+    [SerializeField] private TextMeshProUGUI timerText;
+    [SerializeField] private TextMeshProUGUI points;
+    [field: SerializeField]
+    public int _AnomaliesCorrected { get; private set; }
+    [SerializeField]
+    private Canvas _changeOrContinue;
     private InputAction _pause;
 
     private void Awake()
@@ -37,21 +42,29 @@ public class GameManager : MonoBehaviour
     {
         _gameTimer += Time.deltaTime;
         timerText.text = $"{_gameTimer}";
+        points.text = $"{_AnomaliesCorrected}/15";
 
         if (_guests.Count <= 0)
         {
             SceneManager.LoadScene(_endGame);
         }
 
-        /*
-        if (_pause.WasPressedThisFrame())
+        if (_AnomaliesCorrected == 15)
+        {
             Time.timeScale = 0;
-
-        if (Time.timeScale == 0)
-            if (_pause.WasPressedThisFrame())
-                Time.timeScale = 1;*/
+            _changeOrContinue.enabled = true;
+            if(Input.GetKeyDown(KeyCode.Y))
+            {
+                _changeOrContinue.enabled = false;
+                Time.timeScale = 1;
+                IncAnomaliesCorrected();
+            }
+        }
     }
-    
+    public void IncAnomaliesCorrected()
+    {
+        _AnomaliesCorrected++;
+    }    
     private void StartAnomaly()
     {
         _anomalies[Random.Range(0, _anomalies.Length)].ChangeState();
