@@ -62,7 +62,8 @@ public class Inventory : MonoBehaviour
     public void RemoveFromInventory()
     {
         _Items[_selectedItem].transform.position
-            = new Vector2(_player.transform.position.x, _player.transform.position.y+_playerSpriteSize);
+            = new Vector2(_player.transform.position.x,
+                _player.transform.position.y + _playerSpriteSize / 2);
         _Items[_selectedItem].GetComponent<SpriteRenderer>().enabled = true;
         _Items[_selectedItem].GetComponent<Collectable>().enabled = true;
         _Items.Remove(_Items[_selectedItem]);

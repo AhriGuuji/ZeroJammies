@@ -12,18 +12,17 @@ public class Collectable : Interactable
 
     protected override void Update()
     {
-        Collider2D collider = Physics2D.OverlapCircle(transform.position, _interactRange);
-
+        Collider2D collider = Physics2D.OverlapCircle(transform.position, _interactRange, _playerLayer);
+        if (!collider) return;
 
         if (collider.GetComponent<PlayerMovement>())
         {
-            Debug.Log("Alo");
             if (_interact.WasPressedThisFrame())
             {
+                Debug.Log("grab");
                 _inventory.AddToInventory(this);
                 GetComponent<SpriteRenderer>().enabled = false;
                 GetComponent<Collectable>().enabled = false;
-                Debug.Log("Popo");
             }
         }
     }
