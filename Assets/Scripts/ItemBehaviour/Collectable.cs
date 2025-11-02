@@ -2,7 +2,9 @@ using UnityEngine;
 
 public class Collectable : Interactable
 {
-    private Inventory _inventory;
+    [SerializeField]
+    protected Show _respectiveShow;
+    protected Inventory _inventory;
     protected override void Awake()
     {
         base.Awake();
@@ -21,6 +23,7 @@ public class Collectable : Interactable
             {
                 Debug.Log("grab");
                 _inventory.AddToInventory(this);
+                StartCoroutine(_respectiveShow.ShowMe());
                 GetComponent<SpriteRenderer>().enabled = false;
                 GetComponent<Collectable>().enabled = false;
             }

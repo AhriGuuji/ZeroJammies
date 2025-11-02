@@ -102,3 +102,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interactRange: 10
   _inputInteract: Interact
+  _playerLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  _interactionsNeeded: 0

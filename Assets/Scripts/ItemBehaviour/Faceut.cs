@@ -14,7 +14,9 @@ public class Faceut : Interactable
     protected override void GameEvent()
     {
         Debug.Log("Xerz");
+        GetComponent<SpriteRenderer>().enabled = true;
         GetComponent<SpriteRenderer>().sprite = _sprite;
         memoryTimer.resetTimer();
+
     }
 }

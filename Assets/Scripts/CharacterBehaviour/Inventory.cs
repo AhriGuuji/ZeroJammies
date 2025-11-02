@@ -24,26 +24,32 @@ public class Inventory : MonoBehaviour
     private string _next = "Next";
     [SerializeField]
     private string _previous = "Previous";
-    private int _selectedItem;
+    [field: SerializeField]
+    public int SelectedItem { get; private set; }
     private PlayerMovement _player;
 
     private void Awake()
     {
         _player = FindAnyObjectByType<PlayerMovement>();
-        _selectedItem = 0;
+        SelectedItem = 0;
     }    
     private void Update()
     {
-        Debug.Log(_selectedItem);
+        Debug.Log(SelectedItem);
 
         if (InputSystem.actions.FindAction(_drop).WasPressedThisFrame())
             RemoveFromInventory();
-        if (_selectedItem != _inventorySize &&
+        if (SelectedItem != _inventorySize &&
             InputSystem.actions.FindAction(_next).WasPressedThisFrame())
-            _selectedItem++;
-        if (_selectedItem != 0 &&
+            SelectedItem++;
+        if (SelectedItem != 0 &&
             InputSystem.actions.FindAction(_previous).WasPressedThisFrame())
-            _selectedItem--;
+            SelectedItem--;
+
+        if (SelectedItem > _Items.Count || SelectedItem < 0)
+        {
+            SelectedItem = _Items.Count;
+        }
     }
 
     public void AddToInventory(Item item)
@@ -61,11 +67,11 @@ public class Inventory : MonoBehaviour
 
     public void RemoveFromInventory()
     {
-        _Items[_selectedItem].transform.position
+        _Items[SelectedItem].transform.position
             = new Vector2(_player.transform.position.x,
                 _player.transform.position.y + _playerSpriteSize / 2);
-        _Items[_selectedItem].GetComponent<SpriteRenderer>().enabled = true;
-        _Items[_selectedItem].GetComponent<Collectable>().enabled = true;
-        _Items.Remove(_Items[_selectedItem]);
+        _Items[SelectedItem].GetComponent<SpriteRenderer>().enabled = true;
+        _Items[SelectedItem].GetComponent<Collectable>().enabled = true;
+        _Items.Remove(_Items[SelectedItem]);
     }
 }

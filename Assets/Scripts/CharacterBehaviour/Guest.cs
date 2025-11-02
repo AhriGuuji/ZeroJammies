@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class Guest : Character
@@ -8,9 +9,20 @@ public class Guest : Character
     [Header("WallCheck")]
     [SerializeField] private Transform wallCheck;
     [SerializeField] private float wallCheckRadius = 2.0f;
+
+    [Header("Stress Levels")]
+    [field: SerializeField]
+    public float StressLevel { get; private set; }
+    [field: SerializeField]
+    public bool CanStress { get; private set; }
+    [SerializeField]
+    private float _maxStressLevel;
+    [SerializeField]
+    private float _cdToIncStress;
     private bool cantPass;
     private bool willFall;
     private Vector2 direction = Vector2.right;
+
     protected override void Update()
     {
         PreventFalling();
@@ -19,11 +31,27 @@ public class Guest : Character
         if (willFall | cantPass)
             direction = -direction;
 
-        Debug.Log(direction);
-        Debug.Log(willFall);
-        Debug.Log(cantPass);
-                
-        base.Update(); 
+        base.Update();
+
+        if (StressLevel >= _maxStressLevel)
+        {
+            FindAnyObjectByType<GameManager>().GuestRunAway(this);
+            Destroy(this);
+        }
+
+        Debug.Log(StressLevel);
+    }
+
+    public IEnumerator IncrementStress(float stressGained)
+    {
+        CanStress = false;
+
+        WaitForSeconds wfs = new(_cdToIncStress);
+        StressLevel += stressGained;
+
+        yield return wfs;
+
+        CanStress = true;
     }
 
     private void WallNear()
