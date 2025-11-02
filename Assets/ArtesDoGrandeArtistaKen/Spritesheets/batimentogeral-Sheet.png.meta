@@ -1,0 +1,501 @@
+fileFormatVersion: 2
+guid: 27699d2510fad924a9b928d5f1af8d6f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4816136985726601575
+    second: batimentogeral-Sheet_0
+  - first:
+      213: -4834652487058048772
+    second: batimentogeral-Sheet_1
+  - first:
+      213: 3515534385294109857
+    second: batimentogeral-Sheet_2
+  - first:
+      213: 7435039750890163828
+    second: batimentogeral-Sheet_3
+  - first:
+      213: 8720389676147526266
+    second: batimentogeral-Sheet_4
+  - first:
+      213: 6320029321097735075
+    second: batimentogeral-Sheet_5
+  - first:
+      213: 5188552923123859757
+    second: batimentogeral-Sheet_6
+  - first:
+      213: -5531936643670261770
+    second: batimentogeral-Sheet_7
+  - first:
+      213: 1740774117801587317
+    second: batimentogeral-Sheet_8
+  - first:
+      213: -6222797005356845282
+    second: batimentogeral-Sheet_9
+  - first:
+      213: -684837826174469530
+    second: batimentogeral-Sheet_10
+  - first:
+      213: 6487181928946559850
+    second: batimentogeral-Sheet_11
+  - first:
+      213: 3357743618220834291
+    second: batimentogeral-Sheet_12
+  - first:
+      213: -4064254301691266656
+    second: batimentogeral-Sheet_13
+  - first:
+      213: 7478296478385939950
+    second: batimentogeral-Sheet_14
+  - first:
+      213: 4035212741577261004
+    second: batimentogeral-Sheet_15
+  - first:
+      213: 7460390740867229467
+    second: batimentogeral-Sheet_16
+  - first:
+      213: 5445154594514735201
+    second: batimentogeral-Sheet_17
+  - first:
+      213: 1666916611048938872
+    second: batimentogeral-Sheet_18
+  - first:
+      213: -2282106137339073197
+    second: batimentogeral-Sheet_19
+  - first:
+      213: 513714274251135171
+    second: batimentogeral-Sheet_20
+  - first:
+      213: 8225777540359454409
+    second: batimentogeral-Sheet_21
+  - first:
+      213: -55811216949435623
+    second: batimentogeral-Sheet_22
+  - first:
+      213: 6188624907754113736
+    second: batimentogeral-Sheet_23
+  - first:
+      213: 540276457003236494
+    second: batimentogeral-Sheet_24
+  - first:
+      213: 1269790055936331107
+    second: batimentogeral-Sheet_25
+  - first:
+      213: 1847183921481159673
+    second: batimentogeral-Sheet_26
+  - first:
+      213: 994043006998238450
+    second: batimentogeral-Sheet_27
+  - first:
+      213: 871534433446453262
+    second: batimentogeral-Sheet_28
+  - first:
+      213: -1926640186221962304
+    second: batimentogeral-Sheet_29
+  - first:
+      213: 8958532268819118255
+    second: batimentogeral-Sheet_30
+  - first:
+      213: 3820563768423516815
+    second: batimentogeral-Sheet_31
+  - first:
+      213: 4945852239286675584
+    second: batimentogeral-Sheet_32
+  - first:
+      213: 7213581650885289614
+    second: batimentogeral-Sheet_33
+  - first:
+      213: 8553501967652000572
+    second: batimentogeral-Sheet_34
+  - first:
+      213: -1995891761524054540
+    second: batimentogeral-Sheet_35
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 1
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: batimentogeral-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 41
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9963520bde4a92db0800000000000000
+      internalID: -4816136985726601575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: batimentogeral-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 32
+        width: 41
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf832789d2dd7ecb0800000000000000
+      internalID: -4834652487058048772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: batimentogeral-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 32
+        width: 41
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ac6027b5efa9c030800000000000000
+      internalID: 3515534385294109857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: batimentogeral-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 32
+        width: 41
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47e87bac2419e2760800000000000000
+      internalID: 7435039750890163828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: batimentogeral-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 16
+        width: 41
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7ac1c5353c050970800000000000000
+      internalID: 8720389676147526266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: batimentogeral-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 16
+        width: 41
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ab651ebe2145b750800000000000000
+      internalID: 6320029321097735075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: batimentogeral-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 16
+        width: 41
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d21cc19b461710840800000000000000
+      internalID: 5188552923123859757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: batimentogeral-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 16
+        width: 41
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ff311a9eec9a33b0800000000000000
+      internalID: -5531936643670261770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: batimentogeral-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 41
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 572f1cd46d8782810800000000000000
+      internalID: 1740774117801587317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: batimentogeral-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 0
+        width: 41
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e17375ae71f24a9a0800000000000000
+      internalID: -6222797005356845282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: batimentogeral-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 0
+        width: 41
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66abe1220a7fe76f0800000000000000
+      internalID: -684837826174469530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: batimentogeral-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 0
+        width: 41
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6b61340899170a50800000000000000
+      internalID: 6487181928946559850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 0d8b460e6fb01e742b384a7778d2955a
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      batimentogeral-Sheet_0: -4816136985726601575
+      batimentogeral-Sheet_1: -4834652487058048772
+      batimentogeral-Sheet_10: -684837826174469530
+      batimentogeral-Sheet_11: 6487181928946559850
+      batimentogeral-Sheet_2: 3515534385294109857
+      batimentogeral-Sheet_3: 7435039750890163828
+      batimentogeral-Sheet_4: 8720389676147526266
+      batimentogeral-Sheet_5: 6320029321097735075
+      batimentogeral-Sheet_6: 5188552923123859757
+      batimentogeral-Sheet_7: -5531936643670261770
+      batimentogeral-Sheet_8: 1740774117801587317
+      batimentogeral-Sheet_9: -6222797005356845282
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
