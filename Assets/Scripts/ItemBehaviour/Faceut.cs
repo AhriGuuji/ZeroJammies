@@ -1,10 +1,11 @@
 using UnityEngine;
 
-public class Faceut : Interactable
+public class Faceut : GlobalCounter
 {
     [SerializeField]
     private Sprite _sprite;
     private MemoryTimer memoryTimer;
+
     protected override void Awake()
     {
         base.Awake();
@@ -17,6 +18,7 @@ public class Faceut : Interactable
         GetComponent<SpriteRenderer>().enabled = true;
         GetComponent<SpriteRenderer>().sprite = _sprite;
         memoryTimer.resetTimer();
+        CounterUp();
 
     }
 }
