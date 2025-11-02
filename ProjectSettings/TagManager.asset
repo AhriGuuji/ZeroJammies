@@ -3,12 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 3
-<<<<<<< HEAD
   tags: []
-=======
-  tags:
-  - Teleporter
->>>>>>> 4d40df52e4fd6f72070b6ebc274711ad53c6871a
   layers:
   - Default
   - TransparentFX
@@ -16,7 +11,7 @@ TagManager:
   - 
   - Water
   - UI
-  - Player
+  - 
   - 
   - 
   - 
