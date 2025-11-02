@@ -193,4 +193,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _interactRange: 0
-  _inputInteract: Interact
+  _inputInteract: Teleport
+  _playerLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  _interactionsNeeded: 0
