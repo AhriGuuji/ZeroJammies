@@ -1205,7 +1205,7 @@ MonoBehaviour:
   _inputInteract: Interact
   _playerLayer:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 0
   _interactionsNeeded: 1
   <TaskCounter>k__BackingField: 0
   _sprite: {fileID: -1022094526798458420, guid: 7495abfec60686e47a8651b389986f1e, type: 3}
@@ -1668,7 +1668,7 @@ MonoBehaviour:
   _inputInteract: Interact
   _playerLayer:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 0
   _interactionsNeeded: 1
   <TaskCounter>k__BackingField: 0
   _sprite: {fileID: -761463199596151684, guid: 9d1a1ff5eae4d4743bb895332c7e83f0, type: 3}
@@ -1884,8 +1884,30 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8955710834503400341, guid: d5e2a680d1ba8e341a92fbb653615c45, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 750616902}
   m_SourcePrefab: {fileID: 100100000, guid: d5e2a680d1ba8e341a92fbb653615c45, type: 3}
+--- !u!1 &750616901 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8955710834503400341, guid: d5e2a680d1ba8e341a92fbb653615c45, type: 3}
+  m_PrefabInstance: {fileID: 750616900}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &750616902
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 750616901}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fbe11a62270a6f44922290eb5f8c6fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _anim: {fileID: 0}
+  _beatAnimation: StopBeat
 --- !u!1 &780906318
 GameObject:
   m_ObjectHideFlags: 0
@@ -2361,8 +2383,30 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8955710834503400341, guid: d5e2a680d1ba8e341a92fbb653615c45, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1127567176}
   m_SourcePrefab: {fileID: 100100000, guid: d5e2a680d1ba8e341a92fbb653615c45, type: 3}
+--- !u!1 &1127567175 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8955710834503400341, guid: d5e2a680d1ba8e341a92fbb653615c45, type: 3}
+  m_PrefabInstance: {fileID: 1127567174}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1127567176
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1127567175}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fbe11a62270a6f44922290eb5f8c6fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _anim: {fileID: 0}
+  _beatAnimation: StopBeat
 --- !u!1001 &1179935213
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2418,8 +2462,30 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8955710834503400341, guid: d5e2a680d1ba8e341a92fbb653615c45, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1179935215}
   m_SourcePrefab: {fileID: 100100000, guid: d5e2a680d1ba8e341a92fbb653615c45, type: 3}
+--- !u!1 &1179935214 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8955710834503400341, guid: d5e2a680d1ba8e341a92fbb653615c45, type: 3}
+  m_PrefabInstance: {fileID: 1179935213}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1179935215
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1179935214}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fbe11a62270a6f44922290eb5f8c6fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _anim: {fileID: 0}
+  _beatAnimation: StopBeat
 --- !u!1 &1233742975
 GameObject:
   m_ObjectHideFlags: 0
@@ -2747,7 +2813,7 @@ MonoBehaviour:
   _inputInteract: Interact
   _playerLayer:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 0
   _interactionsNeeded: 0
   requiredPresses: 10
   timeLimit: 2
@@ -2921,7 +2987,7 @@ MonoBehaviour:
   _inputInteract: Interact
   _playerLayer:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 0
   _interactionsNeeded: 1
   <TaskCounter>k__BackingField: 0
   _sprite: {fileID: 9220843974360675584, guid: 00c95fb4cd61c4a4ba392919546e5629, type: 3}
@@ -3582,7 +3648,7 @@ MonoBehaviour:
   _inputInteract: Interact
   _playerLayer:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 0
   _interactionsNeeded: 1
   <TaskCounter>k__BackingField: 0
   _sprite: {fileID: 1925713246183194479, guid: 48fd70fe95b99044f8bb4b80e6176157, type: 3}
@@ -4115,8 +4181,30 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8955710834503400341, guid: d5e2a680d1ba8e341a92fbb653615c45, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2079697035}
   m_SourcePrefab: {fileID: 100100000, guid: d5e2a680d1ba8e341a92fbb653615c45, type: 3}
+--- !u!1 &2079697034 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8955710834503400341, guid: d5e2a680d1ba8e341a92fbb653615c45, type: 3}
+  m_PrefabInstance: {fileID: 2079697033}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2079697035
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2079697034}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fbe11a62270a6f44922290eb5f8c6fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _anim: {fileID: 0}
+  _beatAnimation: StopBeat
 --- !u!1 &2105628812
 GameObject:
   m_ObjectHideFlags: 0
