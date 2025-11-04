@@ -1,5 +1,3 @@
-using System;
-using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -12,6 +10,7 @@ public class PlayerMovement : Character
     [SerializeField] private float _dodgeForce;
 
     [SerializeField] private string _sprint = "Sprint";
+    [SerializeField] private string _idleAnimation = "IdleAnim";
      private InputAction _inputDash;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -30,27 +29,18 @@ public class PlayerMovement : Character
 
         if (_inputDash.WasPressedThisFrame())
         {
-            Debug.Log("cook");
             Dodge();
         }
 
         base.Update();
+
+        _anim.SetFloat(_idleAnimation,rb.linearVelocityX);
     }
 
     protected override void FixedUpdate()
     {
         base.FixedUpdate();
     }
-
-    /*private void OnEnable()
-    {
-        _inputMovement.Enable();
-    }
-
-    private void OnDisable()
-    {
-        _inputMovement.Disable();
-    }*/
 
     protected override float GetDirection()
     {

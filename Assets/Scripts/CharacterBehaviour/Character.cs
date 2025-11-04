@@ -8,6 +8,8 @@ public abstract class Character : MonoBehaviour
     [SerializeField] protected float decceleration = 1f;
     [SerializeField] protected float _velPower = 2;
     [SerializeField] protected float _friction = 0.2f;
+    [SerializeField] protected Animator _anim;
+    [SerializeField] protected string _runAnimation;
 
     [Header("GroundCheck")]
     [SerializeField] protected Transform groundCheck;
@@ -35,6 +37,8 @@ public abstract class Character : MonoBehaviour
         {
             transform.rotation = Quaternion.identity;
         }
+
+        _anim.SetFloat(_runAnimation, rb.linearVelocityX);
     }
 
     protected virtual void FixedUpdate()
