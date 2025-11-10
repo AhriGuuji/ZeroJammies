@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 2588991000617151952}
   - component: {fileID: 7470380951264438099}
   - component: {fileID: 8420456891316634315}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Woman
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -135,6 +135,8 @@ MonoBehaviour:
   decceleration: 10
   _velPower: 1
   _friction: 0.2
+  _anim: {fileID: 0}
+  _runAnimation: 
   groundCheck: {fileID: 0}
   groundCheckRadius: 2
   groundLayer:
@@ -143,6 +145,7 @@ MonoBehaviour:
   _inputMove: Move
   _dodgeForce: 5
   _sprint: Sprint
+  _idleAnimation: IdleAnim
 --- !u!70 &7470380951264438099
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
