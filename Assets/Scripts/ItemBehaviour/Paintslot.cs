@@ -4,6 +4,9 @@ public class Paintslot : Anomaly
 {
     private Painting _paiting;
 
+    [SerializeField]
+    private GameObject[] _paints;
+
     protected override void Update()
     {
         if (_gameState == STATE.Anomaly)
@@ -25,14 +28,21 @@ public class Paintslot : Anomaly
             {
                 StartCoroutine(collider.GetComponent<Guest>().IncrementStress(_stress));
             }
+
+            if (collider.GetComponent<Painting>())
+            {
+                GameEvent();
+            }
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    protected override void OnChangeState()
     {
-        _paiting = collision.GetComponent<Painting>();
+        base.OnChangeState();
 
-        if (_paiting)
-            GameEvent();
+        foreach (GameObject paint in _paints)
+        {
+            Instantiate(paint);
+        }
     }
 }

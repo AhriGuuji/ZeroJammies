@@ -77,8 +77,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Color: {r: 1, g: 0.9828551, b: 0, a: 1}
+  m_Sprite: {fileID: -6711314597387213636, guid: 1b0a456c7956bee4fb28e8346aab44c5, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -104,8 +104,8 @@ MonoBehaviour:
   _inputInteract: Interact
   _playerLayer:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 0
   _interactionsNeeded: 0
-  _normalState: {fileID: 0}
-  _anomalyState: {fileID: 0}
+  _normalState: {fileID: -6711314597387213636, guid: 1b0a456c7956bee4fb28e8346aab44c5, type: 3}
+  _anomalyState: {fileID: 21300000, guid: f21c6786ff4ea9b489953c181d9d33b5, type: 3}
   _stress: 3.5

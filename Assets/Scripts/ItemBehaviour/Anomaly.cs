@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class Anomaly : Interactable
@@ -37,16 +38,17 @@ public class Anomaly : Interactable
                 }
             }
 
-            if (collider.GetComponent<Guest>() & collider.GetComponent<Guest>().CanStress)
-            {
-                StartCoroutine(collider.GetComponent<Guest>().IncrementStress(_stress));
-            }
-
             if (_interactionsPressed == _interactionsNeeded)
             {
                 GameEvent();
             }
+
+            if (collider.GetComponent<Guest>() & collider.GetComponent<Guest>().CanStress)
+            {
+                StartCoroutine(collider.GetComponent<Guest>().IncrementStress(_stress));
+            }
         }
+        else return;
     }
 
     protected override void GameEvent()
@@ -59,7 +61,14 @@ public class Anomaly : Interactable
 
     public void ChangeState()
     {
-        OnChangeState();
+        try
+        {
+            OnChangeState();
+        }
+        catch(StackOverflowException)
+        {
+            return;
+        }
     }
 
     protected virtual void OnChangeState()
